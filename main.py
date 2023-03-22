@@ -5,7 +5,7 @@ def encoder(string):
 
     return new_string
 
-def decoder():
+def decoder(string):
     new_string = ''
     for i in string:
         new_string += str((int(i) - 3) % 10)
