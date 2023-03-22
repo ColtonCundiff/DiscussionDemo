@@ -22,7 +22,7 @@ def main():
 
         if option == 1:
             password = input('Please enter your password to encode: ')
-            password = encoder(password)
+            new_password = encoder(password)
             print('Your password has been encoded and stored!\n')
 
         elif option == 2:
