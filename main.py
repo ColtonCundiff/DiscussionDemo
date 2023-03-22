@@ -1,7 +1,7 @@
 def encoder(string):
     new_string = ''
     for i in string:
-        new_string += str(int(i) + 3)
+        new_string += str((int(i) + 3) % 10)
 
     return new_string
 
@@ -18,7 +18,7 @@ def main():
               '2. Decode\n'
               '3. Quit\n')
 
-        option = input('Please enter an option: ')
+        option = int(input('Please enter an option: '))
 
         if option == 1:
             password = input('Please enter your password to encode: ')
