@@ -6,7 +6,10 @@ def encoder(string):
     return new_string
 
 def decoder():
-    pass
+    new_string = ''
+    for i in string:
+        new_string += str((int(i) - 3) % 10)
+    return new_string
 
 def main():
     password = ''
@@ -26,7 +29,7 @@ def main():
             print('Your password has been encoded and stored!\n')
 
         elif option == 2:
-            pass
+            print(f'The encoded password is {new_password} and the original password is {decoder(new_password)}')
 
         elif option == 3:
             break
